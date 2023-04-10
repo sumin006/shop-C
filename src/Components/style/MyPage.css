@@ -1,0 +1,72 @@
+.mpBox{
+  display: flex;
+  border: 1px solid var(--light-gray-color);
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  padding: 50px 10px;
+}
+.mpBox > div{
+  width: 23%;
+}
+.mpList{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.mpList > a{
+  width: 23%;
+}
+.mpList_box{
+  border: 1px solid var(--light-gray-color);
+  height: 160px;
+  margin: 30px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  justify-content: center;
+  line-height: 50px;
+}
+.mpList_box:hover{
+  background-color: #eee;
+}
+.mpInputs{
+  margin-bottom: 40px;
+}
+.mpInputs .inputs{
+  height: 120px;
+}
+.inputs > span {
+  width: 30%;
+  font-weight: bold;
+}
+.inputs > div{
+  width: 70%;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mpList > a{
+    width: 49%;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .mpList{
+    flex-wrap: wrap;
+  }
+  .mpList > a{
+    width: 49%;
+  }
+}
+@media (max-width: 480px) {
+  .mpList{
+    flex-wrap: wrap;
+  }
+  .mpList > a{
+    width: 100%;
+  }
+}

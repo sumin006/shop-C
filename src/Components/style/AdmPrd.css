@@ -1,0 +1,140 @@
+
+/* product */
+.DataDiv .mainProduct{
+  width: 137px;
+  height: 137px;
+  border: 1px solid var(--gray-color);
+}
+.DataDiv tr{
+  line-height: 30px;
+  border-bottom: 1px solid var(--light-gray-color);
+}
+.DataDiv tr:nth-child(1){
+  border-bottom: 1px solid black;
+}
+
+.DataDiv .cate-box > .productState{
+  min-height: 200px;
+}
+.DataDiv th,.DataDiv td{
+  padding: 20px;
+}
+.productState{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+}
+.productState > span{
+  width: 10%;
+  min-width: 105px;
+  font-weight: bold;
+  text-align: left;
+  padding: 0 20px;
+}
+.productState > div{
+  width: 90%;
+}
+.productState .radioBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bestNewTd{
+  display: flex;
+  min-width: 400px;
+  justify-content: space-between;
+}
+/*  */
+.productTitleDiv{
+  margin: 20px 0;
+}
+.productImgDiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.productImgDiv .mainDiv{
+  width: 66%;
+}
+
+/*  */
+.productImgDivSet{
+  padding: 10px;
+}
+
+/*  */
+.productAmount{
+  width: 100%;
+  text-align: center;
+}
+
+.productAmount .img{ width: 100px}
+.productAmount .cate{ width: 100px;}
+.productAmount .name{ width: 300px; text-align: left;}
+.productAmount .size{ width: 200px;}
+.productAmount .color{ width: 200px;}
+.productAmount .amount{ width: 100px;}
+.productAmount .add{ width: 200px;}
+.amount-box{
+  display: flex;
+  min-width: 200px
+}
+.prdocutAdd{
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  border-bottom: none!important;
+}
+.prdocutAdd div{
+  height: 0;
+  overflow: hidden;
+}
+.prdocutAdd td{
+  padding: 0;
+}
+.prdocutAdd.open{
+  height: 150px;
+  border-bottom: 1px solid var(--light-gray-color)!important;
+}
+.prdocutAdd.open div {
+  height: auto;
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .bestNewTd{
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .DataDiv.memberForm{
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .DataDiv.memberForm{
+    display: none;
+  }
+  .DataDiv tr:nth-child(1){
+    flex-direction: row;
+  }
+  .DataDiv tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .DataDiv.memberForm{
+    display: none;
+  }
+  .DataDiv tr:nth-child(1){
+    flex-direction: row;
+  }
+  .DataDiv tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

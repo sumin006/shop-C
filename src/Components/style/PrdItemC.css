@@ -1,0 +1,134 @@
+#detail{
+  width: 100%;
+}
+.detail-top{
+  display: flex;
+  margin-bottom: 100px;
+}
+.detail-top .left, .detail-top .right{
+  width: 50%;
+  margin: 30px;
+}
+.detail-top .selectDiv table{
+  width: 100%;
+  height: 600px;
+}
+.detail-top .selectDiv tbody{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.detail-top .selectDiv th{
+  padding: 0 30px;
+}
+.detail-photo{
+  display: flex;
+  flex-direction: column;
+}
+.soldOut{
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid var(--gray-color);
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  color: var(--gray-color);
+  margin: 10px;
+  background-color: white;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .detail-top .left, .detail-top .right{
+    width: 100%;
+    margin: 0;
+  }
+  .detail-top{
+    flex-direction: column;
+  }
+  .textDiv{
+    margin-top: 100px;
+    display: flex;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .textDiv h2{
+    margin: 0 20px;
+  }
+  .textDiv .priceDiv{
+    border: 0;
+  }
+  .detail-top .selectDiv table{
+    height: auto;
+  }
+  .detail-top .selectDiv th{
+    width: 200px;
+  }
+  .detail-top .selectDiv tr{
+    margin: 20px 0;
+  }
+  .detail-top .selectDiv tr:last-child td{
+    text-align: center;
+    width: 100vw;
+  }
+  .btns{
+    display: revert;
+    padding-right: 10px;
+  }
+}
+@media (max-width: 480px) {
+  p{
+    padding: 0 5px;
+  }
+  .detail-top .left, .detail-top .right{
+    width: 100%;
+    margin: 0;
+  }
+  .detail-top{
+    flex-direction: column;
+  }
+  .textDiv{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    align-items: center;
+  }
+  .textDiv h2{
+    padding: 10px 20px;
+    margin: 0;
+  }
+  .textDiv .priceDiv{
+    grid-template-areas:
+    "saleprice salePro price ";
+    justify-content: center;
+    width: 100%;
+    border: 0;
+  }
+  
+  .detail-top .selectDiv table{
+    height: auto;
+  }
+  .detail-top .selectDiv th{
+    width: 200px;
+  }
+  .detail-top .selectDiv tr{
+    margin: 20px 0;
+  }
+  .detail-top .selectDiv tr:last-child td{
+    text-align: center;
+    width: 100vw;
+  }
+  .btns{
+    display: revert;
+    padding-right: 10px;
+  }
+}

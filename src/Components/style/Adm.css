@@ -1,0 +1,91 @@
+/* loading */
+.loading{
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+}
+
+/* Div */
+.DataDiv{
+  padding: 20px;
+  margin: 30px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 1px solid var(--gray-color);
+  background-color: #fff;
+}
+
+/* default-detail */
+.DataDiv input:not([type="radio"]){
+  width: 100%;
+}
+.DataDiv pre{
+  margin-left: 50px;
+  text-align: left;
+}
+.mainDiv pre, .productTitleDiv pre{
+  margin-left: 20px;
+}
+.DataDiv.update >div{
+  width: 30%;
+  margin: 20px 0;
+}
+.miniImg{
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--gray-color);
+}
+.DataDiv select{
+  width: 100%;
+  text-align: center;
+}
+.DataDiv span{
+  display: inline-block;
+  width: 10px;
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .DataDiv{
+    flex-direction: column;
+  }
+  .DataDiv.update >div{
+    width: 100%;
+  }
+  .productAmount{
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .DataDiv{
+    flex-direction: column;
+  }
+  .DataDiv.update >div{
+    width: 100%;
+  }
+  table.DataDiv .miniImg{
+    width: 200px;
+    height: auto;
+  }
+  .productAmount{
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .DataDiv{
+    flex-direction: column;
+  }
+  .DataDiv.update >div{
+    width: 100%;
+  }
+  table.DataDiv .miniImg{
+    width: 200px;
+    height: auto;
+  }
+  .productAmount{
+    display: none;
+  }
+}
